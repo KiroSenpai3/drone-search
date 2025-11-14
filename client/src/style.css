@@ -1,0 +1,39 @@
+:root {
+  --bg: #0f1724;
+  --panel: #071023;
+  --accent: #0ea5e9;
+  --muted: #9aa8b9;
+  --card: #0b1220;
+}
+
+* { box-sizing: border-box; }
+body, html, #root { height: 100%; margin: 0; font-family: Inter, Arial, sans-serif; background: var(--bg); color: #e6eef8; }
+
+.app { display: flex; height: 100vh; gap: 0; }
+.left { flex: 2; display: flex; flex-direction: column; padding: 12px; gap: 12px; }
+.right { width: 360px; padding: 16px; background: linear-gradient(180deg, #061221, #071625); border-left: 1px solid rgba(255,255,255,0.03); overflow-y: auto; }
+
+.video-card { background: #071b28; padding: 10px; border-radius: 8px; box-shadow: 0 6px 16px rgba(2,6,23,0.6); }
+.video-card h3 { margin: 4px 0 8px 0; font-size: 14px; color: var(--accent); }
+.video-meta { margin-top: 6px; color: var(--muted); font-size: 12px; display:flex; gap:12px; }
+
+.map-wrapper { background: linear-gradient(180deg,#e9f4ff,#e6eefc); padding: 8px; border-radius: 8px; box-shadow: 0 6px 16px rgba(2,6,23,0.4); display:flex; justify-content:center; align-items:center; }
+
+.map-canvas { border-radius: 8px; box-shadow: 0 4px 12px rgba(2,6,23,0.25); }
+
+.right-panel h2 { margin-top: 4px; font-size: 20px; color: var(--accent); }
+.controls { margin-top: 8px; display:flex; gap:8px; }
+.btn { padding: 8px 12px; border-radius:6px; border: none; cursor: pointer; font-weight:600; }
+.btn.start { background: #10b981; color: #041114; }
+.btn.pause { background: #f59e0b; color: #041114; }
+.btn.reset { background: #ef4444; color: #fff; }
+
+.summary { margin-top: 12px; padding: 8px; background: rgba(255,255,255,0.02); border-radius:6px; color: var(--muted); }
+.drone-list { margin-top: 8px; }
+.drone-card { background: rgba(255,255,255,0.02); padding: 8px; border-radius:6px; margin-bottom:8px; color:#cfeffb; }
+.drone-row { display:flex; justify-content:space-between; align-items:center; margin-bottom:6px; }
+.warning { color: #ffb4a2; }
+
+.log-box { margin-top: 10px; background: rgba(255,255,255,0.02); padding: 8px; border-radius:6px; max-height: 260px; overflow:auto; font-size:13px; color: #d8f3ff; }
+.log-line { margin-bottom:6px; color:#d8f3ff; }
+.centered { display:flex; justify-content:center; align-items:center; height:100vh; font-size:18px; color:var(--muted); }
